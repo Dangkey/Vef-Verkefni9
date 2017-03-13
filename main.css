@@ -1,0 +1,21 @@
+.rett
+{
+	background-color: green;
+}
+.rangt
+{
+	background-color: red;
+}
+#container
+{
+	position: fixed;
+	 top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);	
+	width: 500px;	
+	border: 1px solid;
+}
+body
+{
+	text-align: center;
+}
