@@ -44,7 +44,7 @@ var score = 0;
 	 	for(let i = 0; i < this.answers.length; i++) {
 	 		   tmplAnswers += "<div>" + this.answers[i] + "</div>";
 	 	}
-	 	return "<h2>" + this.question + "</h2>" + tmplAnswers +"<br> Þú ert með " + score + " af " + questions.length + " réttum";
+	 	return "<h2>" + this.question + "</h2>" + tmplAnswers +"<br> Þú ert með " + score + " af " + questions.length + " réttum <br>P.S ýttu á 1,2,3,4,5,6,7 til að breyta um lit á síðunni, aðrir takkar resetta litinn";
 
 	};
 
@@ -75,6 +75,34 @@ var score = 0;
  	Þegar notandi hefur smellt á einhvern svarmöguleika þá á viðkomandi svarmöguleiki að fá rauðan
 	bakgrunnslit. Notað er Event object og Event Delegation til að ná þessu fram. 
 */
+var colors = ["red","orange","yellow","green","lightblue","blue","purple"];
+addEventListener("keydown", function(event) {
+	if (event.keyCode == 49) {
+		document.body.style.background = colors[0];
+	}
+	else if (event.keyCode == 50) {
+		document.body.style.background = colors[1];
+	}
+	else if (event.keyCode == 51) {
+		document.body.style.background = colors[2];
+	}
+	else if (event.keyCode == 52) {
+		document.body.style.background = colors[3];
+	}
+	else if (event.keyCode == 53) {
+		document.body.style.background = colors[4];
+	}
+	else if (event.keyCode == 54) {
+		document.body.style.background = colors[5];
+	}
+	else if (event.keyCode == 55) {
+		document.body.style.background = colors[6];
+	}
+	else{
+		document.body.style.background = "";
+	}
+	
+  });
 elContainer.addEventListener('click', function(e) {
 	
 
